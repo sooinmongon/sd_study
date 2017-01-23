@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>table</title>
+  <!-- 표만들기 -->
+</head>
+
+<body>
+  <!-- width는 화면에비례한 사이즈(고정값이아님) / border는 라인-->
+  <table border="1" width="100%">
+
+    <!-- 예전 표스타일 -->
+    <tr>
+      <!-- td{title$}*4 후 tab 누르기 -->
+      <td>title1</td>
+      <td>title2</td>
+      <td>title3</td>
+      <td>title4</td>
+    </tr>
+    <tr>
+      <td>title1</td>
+      <td>title2</td>
+      <td>title3</td>
+      <td>title4</td>
+    </tr>
+  </table>
+
+</body>
+</html>
+
+
+<br />
+<br />
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>table_1</title>
+</head>
+<body>
+  <table border="1" width="100%">
+
+    <!-- 테이블 머릿말 -->
+    <thead>
+      <tr>
+        <th>월</th>
+        <th>화</th>
+        <th>수</th>
+        <th>목</th>
+        <th>금</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <td>100</td>
+      <td>200</td>
+      <td>300</td>
+      <td>400</td>
+      <td>500</td>
+    </tbody>
+
+    <!-- 합계가 있는경우 tfoor사용,tfoot은 thead,tdody위던 아래던 위치 상관없음 -->
+    <tfoot>
+      <tr>
+        <td>foot</td>
+        <td>foot</td>
+        <td>foot</td>
+        <td>foot</td>
+        <td>foot</td>
+      </tr>
+    </tfoot>
+
+  </table>
+</body>
+</html>
+
+
+<br />
+<br />
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>table_3</title>
+</head>
+<body>
+
+  <table border="1" width="100%" summary="3강의실 스마트웹엡 반입니다.">
+    <!-- summarysms 육안상 표시되지 않음 -->
+    <!-- 표제목 -->
+    <caption>시간표</caption>
+
+    <!-- 표셀크기조절-->
+    <colgroup>
+      <col width="100"/>
+      <col width="200"/>
+      <col />
+      <col />
+      <col />
+    </colgroup>
+
+
+    <!-- 합계가있는경우 -->
+    <tfoot>
+      <tr>
+        <td>foot</td>
+        <td>foot</td>
+        <td>foot</td>
+        <td>foot</td>
+        <td>foot</td>
+      </tr>
+    </tfoot>
+    <!-- 테이블 머릿말 -->
+    <thead>
+      <tr>
+        <!-- td{title$}*4 -->
+        <th>월</th>
+        <th>화</th>
+        <th>수</th>
+        <th>목</th>
+        <th>금</th>
+      </tr>
+    </thead>
+
+    <!-- 테이블 infomation -->
+    <tbody>
+      <tr>
+        <td>title1</td>
+        <td>title2</td>
+        <td>title3</td>
+        <td>title4</td>
+        <td>title4</td>
+      </tr>
+      <tr>
+        <td>title1</td>
+        <td>title2</td>
+        <td>title3</td>
+        <td>title4</td>
+        <td>title4</td>
+      </tr>
+      <tr>
+        <td>title1</td>
+        <td>title2</td>
+        <td>title3</td>
+        <td>title4</td>
+        <td>title4</td>
+      </tr>
+    </tbody>
+
+  </table>
+</body>
+</html>
+
+
+<br />
+<br />
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+<!-- 셀병합 -->
+    <meta charset="utf-8">
+    <title>table_marge cell</title>
+  </head>
+  <body>
+<table border="2" width="100%">
+
+<tr>
+  <td colspan="5">title1</td>
+</tr>
+<tr>
+    <td rowspan="2">title1</td>
+    <td>title2</td>
+    <td>title3</td>
+    <td>title4</td>
+    <td>title4</td>
+</tr>
+
+
+</table>
+  </body>
+</html>
